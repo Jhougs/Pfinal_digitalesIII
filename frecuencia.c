@@ -11,7 +11,7 @@ void read_adc_value(){
     float lectura  = (float)lectura_adc / 4095.0 * 3.3;
     lectura = lectura - 0.5;
     //frecuencia_cardiaca = (lectura*150)/ (3.3);
-    if(lectura >1.17){
+    if(lectura >1.13){
         frecuencia_cardiaca = (lectura*150)/ (3.3);
     } else {
         frecuencia_cardiaca = 0;
